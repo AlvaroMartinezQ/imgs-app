@@ -1,12 +1,11 @@
 <template>
   <v-container>
-    
+    hola
   </v-container>
 </template>
 
 <script>
-  export default {
-    name: 'HelloWorld',
-    data: () => ({}),
-  }
+export default {
+  name: 'Home'
+}
 </script>
