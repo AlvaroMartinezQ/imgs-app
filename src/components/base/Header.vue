@@ -1,17 +1,21 @@
 <template>
   <v-app-bar>
     <v-toolbar-title class="font-weight-black ma-2">IMGS APP</v-toolbar-title>
-    <v-btn>MARS photos</v-btn>
+    <v-btn
+      dark
+      disabled
+    >
+      {{ $t('btn.mars') }}
+    </v-btn>
     <v-spacer />
     <v-menu offset-y>
       <template v-slot:activator="{ on, attrs }">
         <v-btn
-          color="primary"
           dark
           v-bind="attrs"
           v-on="on"
         >
-          lang
+          <v-icon>mdi-web</v-icon>
         </v-btn>
       </template>
       <v-list>
@@ -20,7 +24,7 @@
           :key="index"
         >
           <v-list-item-title>
-            <v-btn>{{ lang.lang }}</v-btn>
+            <v-btn @click="changeLocale(lang.locale)"><country-flag :country='lang.flag' size='normal'/>{{ lang.lang }}</v-btn>
           </v-list-item-title>
         </v-list-item>
       </v-list>
@@ -29,13 +33,20 @@
 </template>
 
 <script>
+import i18n from '@/plugins/i18n'
+
 export default {
   name: 'Header',
   data: () => ({
     langs: [
-      { lang: 'ES' },
-      { lang: 'EN' }
+      { lang: 'EN', locale: 'en', flag: 'us' },
+      { lang: 'ES', locale: 'es', flag: 'es' }
     ]
-  })
+  }),
+  methods: {
+    changeLocale (locale) {
+      i18n.locale = locale
+    }
+  }
 }
 </script>

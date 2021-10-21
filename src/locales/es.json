@@ -1,0 +1,9 @@
+{
+  "message": "hola i18n !!",
+  "btn": {
+    "mars": "Fotos de Marte"
+  },
+  "desc": {
+    "title": "Esta APP usa..."
+  }
+}

@@ -1,6 +1,7 @@
 <template>
   <div class="ml-4 mr-4">
     <Header />
+    <br>
     <router-view />
   </div>
 </template>
