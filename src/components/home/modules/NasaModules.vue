@@ -4,18 +4,31 @@
       <v-img
         height="200px"
         :src="this.image_url"
+        class="white--text align-end"
       >
         <v-card-title
-          class="white--text"
           style="word-break: normal;"  
-        >{{ $t('modules.nasa.title') }}</v-card-title>
+        >
+          {{ $t('modules.nasa.title') }}
+        </v-card-title>
         <v-card-subtitle
           v-if="this.image_date != null"
-          class="white--text"
         >
           {{ $t('modules.nasa.sub') }}: {{ this.image_date }}
         </v-card-subtitle>
       </v-img>
+      <v-card-text>
+        {{ $t('modules.nasa.desc') }}
+      </v-card-text>
+      <v-card-actions>
+        <v-btn
+          :to="{ name: 'apoc', params: { img_url: this.image_url, image_date: this.image_date } }"
+          color="red"
+          outlined
+        >
+          <v-icon>mdi-camera-burst</v-icon>{{ $t('modules.nasa.apoc') }}
+        </v-btn>
+      </v-card-actions>
     </v-card>
   </div>
 </template>

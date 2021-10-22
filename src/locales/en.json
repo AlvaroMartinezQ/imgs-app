@@ -1,6 +1,7 @@
 {
   "btn": {
-    "mars": "Mars photos"
+    "mars": "Mars photos",
+    "home": "Back to home"
   },
   "desc": {
     "title": "This APP uses...",
@@ -12,7 +13,9 @@
   "modules": {
     "nasa": {
       "title": "Check out official images from NASA!",
-      "sub": "Image date"
+      "sub": "Image of the day",
+      "desc": "Check out the image of the day or search for a specific image by a day of your choice.",
+      "apoc": " Astrology pic of the day"
     }
   }
 }

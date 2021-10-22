@@ -1,6 +1,7 @@
 {
   "btn": {
-    "mars": "Fotos de Marte"
+    "mars": "Fotos de Marte",
+    "home": "Volver a inicio"
   },
   "desc": {
     "title": "Esta APP usa...",
@@ -12,7 +13,9 @@
   "modules": {
     "nasa": {
       "title": "¡Echa un vistazo a fotos oficiales de la NASA!",
-      "sub": "Día de la imagen"
+      "sub": "Imagen del día",
+      "desc": "Echa un vistazo a la imagne del día o busca una imagen de un día de tu elección.",
+      "apoc": " Foto de astrología del día"
     }
   }
 }

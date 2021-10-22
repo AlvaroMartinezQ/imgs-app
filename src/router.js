@@ -12,6 +12,12 @@ const routes = [
         path: '',
         name: 'home',
         component: () => import('./components/home/Home.vue')
+      },
+      {
+        path: '/apoc',
+        name: 'apoc',
+        props: true,
+        component: () => import('./components/apoc/Apoc.vue')
       }
     ]
   }
