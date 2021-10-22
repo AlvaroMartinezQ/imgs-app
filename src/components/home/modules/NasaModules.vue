@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card>
+    <v-card v-if="!this.loading">
       <v-img
         height="200px"
         :src="this.image_url"
@@ -26,14 +26,17 @@ import { getImageOfTheDay } from '../../../requests/apod/utils'
 export default {
   name: 'NasaModules',
   data: () => ({
+    loading: false,
     image_url: null,
     image_date: null
   }),
   async mounted () {
+    this.loading = true
     const res = await getImageOfTheDay()
     if (res) {
       this.image_url = res.url
       this.image_date = res.date
+      this.loading = false
     }
   }
 }
