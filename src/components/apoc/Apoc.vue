@@ -48,3 +48,10 @@ export default {
   }
 }
 </script>
+
+<style>
+img {
+ max-width:100%;
+ width:100%;
+}
+</style>
