@@ -1,9 +1,18 @@
 {
-  "message": "hello i18n !!",
   "btn": {
     "mars": "Mars photos"
   },
   "desc": {
-    "title": "This APP uses..."
+    "title": "This APP uses...",
+    "apis": {
+      "title": "The APP also consumes the following API/s...",
+      "end": "...at the moment..."
+    }
+  },
+  "modules": {
+    "nasa": {
+      "title": "Check out official images from NASA!",
+      "sub": "Image date"
+    }
   }
 }

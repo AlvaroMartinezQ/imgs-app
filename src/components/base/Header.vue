@@ -1,12 +1,6 @@
 <template>
   <v-app-bar>
     <v-toolbar-title class="font-weight-black ma-2">IMGS APP</v-toolbar-title>
-    <v-btn
-      dark
-      disabled
-    >
-      {{ $t('btn.mars') }}
-    </v-btn>
     <v-spacer />
     <v-menu offset-y>
       <template v-slot:activator="{ on, attrs }">

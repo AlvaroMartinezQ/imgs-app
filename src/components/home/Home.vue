@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row>
+    <v-row class="mt-2 mb-2">
       <v-flex>
         <v-card>  
           <v-card-title>{{ $t('desc.title') }}</v-card-title>
@@ -52,11 +52,28 @@
         </v-card>
       </v-flex>
     </v-row>
+    <v-row class="mt-2 mb-2">
+      <v-flex>
+        <DescHome />
+      </v-flex>
+    </v-row>
+    <v-row class="mt-2 mb-2">
+      <v-flex>
+        <modules />
+      </v-flex>
+    </v-row>
   </v-container>
 </template>
 
 <script>
+import DescHome from './Desc.vue'
+import Modules from './Modules.vue'
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    DescHome,
+    Modules
+  }
 }
 </script>
